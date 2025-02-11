@@ -1,0 +1,32 @@
+[
+  {
+    "role": "system",
+    "content": "Bạn là trợ lý hỗ trợ khách hàng. Mọi câu trả lời phải bằng tiếng Việt. Sử dụng công cụ được cung cấp để hỗ trợ người dùng."
+  },
+  {
+    "role": "user",
+    "content": "Tôi đang cần tìm mua một sản phẩm pate cá ngừ dành cho mèo và mức giá dưới 25000 VNĐ"
+  },
+  {
+    "role": "assistant",
+    "tool_calls": [
+      {
+        "id": "405959860",
+        "type": "function",
+        "function": {
+          "arguments": {
+            "product_name": "pate cá ngừ",
+            "category": "Thức ăn cho mèo",
+            "range_price": 25000
+          },
+          "name": "search_product"
+        }
+      }
+    ]
+  },
+  {
+    "role": "tool",
+    "content": { "order_id": null, "delivery_date": "2025-02-14 21:15:54" },
+    "tool_call_id": "405959860"
+  }
+]
