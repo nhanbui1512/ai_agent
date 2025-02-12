@@ -5,28 +5,24 @@
   },
   {
     "role": "user",
-    "content": "Tôi đang cần tìm mua một sản phẩm pate cá ngừ dành cho mèo và mức giá dưới 25000 VNĐ"
+    "content": "Tôi đang cần mua một chú chó để có thể nuôi trong một căn hộ và tôi đang phân vân có nên nuôi chú chó Husky hay không. Tôi muốn biết chó đó có phù hợp để nuôi trong nhà không."
   },
   {
     "role": "assistant",
     "tool_calls": [
       {
-        "id": "405959860",
+        "id": "494636591",
         "type": "function",
         "function": {
-          "arguments": {
-            "product_name": "pate cá ngừ",
-            "category": "Thức ăn cho mèo",
-            "range_price": 25000
-          },
-          "name": "search_product"
+          "name": "search_pet_info",
+          "arguments": "{\"question\":\"Chó Husky có phù hợp để nuôi trong nhà không?\"}"
         }
       }
     ]
   },
   {
     "role": "tool",
-    "content": { "order_id": null, "delivery_date": "2025-02-14 21:15:54" },
-    "tool_call_id": "405959860"
+    "content": "Không tìm thấy dữ liệu câu trả lời cho câu hỏi trên.",
+    "tool_call_id": "494636591"
   }
 ]
